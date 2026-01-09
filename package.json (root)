@@ -1,0 +1,15 @@
+{
+  "name": "rap-lab",
+  "private": true,
+  "workspaces": [
+    "client",
+    "api"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "dev": "concurrently \"npm:start --workspace=client\" \"npm:start --workspace=api\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
